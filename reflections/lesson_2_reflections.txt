@@ -1,0 +1,6 @@
+What happens when you initialize a repository? Why do you need to do it?
+it creates a .git folder in the parent directory
+as there is no commit the git status shows "intial commit"
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+well staging area is the middle ground between working directory and final stage at commit, staging area allow git to keep track of all changes and save all changes to modified files in just one commit

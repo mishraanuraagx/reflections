@@ -4,3 +4,26 @@ as there is no commit the git status shows "intial commit"
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 well staging area is the middle ground between working directory and final stage at commit, staging area allow git to keep track of all changes and save all changes to modified files in just one commit
+
+How can you use the staging area to make sure you have one commit per logical change?
+using git diff to check difference between working dir and staginf=g area and use git diff --staged to check between staging area and last commit. git add simply make staging area equal to working dir. then commit to save all staging area changes to repository. Any present change without add or commit is only reflected in working but not in staging or commit. use git reset --hard to remove all changes
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+git branch shows all present beanches, git branch branchName creates a new breanch of present checked out branch, default master. git checkout branchName saves present changes to new branch with all previous commit records from this point. Branches allow extra experimental changes or to to try something newto already functional / working version.
+making fixes of master version in branches is not recommended.
+
+How do the diagrams help you visualize the branch structure?
+understood the unaccessible commit if made on previous commit. in order to sab=ve and access it we need to checkout with new branch name, via git checkout -b newBranchName, == git branch newBranchName + git checkout newBranchname
+
+git merge
+
+git merge will also include the currently checked-out branch in the merged version. So if you have branch1 checked out, and you run git merge branch2 branch3, the merged version will combine branch1 as well as branch2 and branch3. That’s because the branch1 label will update after you make the merge commit, so it’s unlikely that you didn’t want the changes from branch1 included in the merge. For this reason, you should always checkout one of the two branches you’re planning on merging before doing the merge. Which one you should check out depends on which branch label you want to point to the new commit.
+
+Since the checked-out branch is always included in the merge, you may have guessed that when you are merging two branches, you don't need to specify both of them as arguments to git merge on the command line. If you want to merge branch2 into branch1, you can simply git checkout branch1 and then type git merge branch2. The only reason to type git merge branch1 branch2 is if it helps you keep better mental track of which branches you are merging.
+
+Also, since the two branches are merged, the order in which they are typed into the command line does not matter. The key is to remember that git merge always merges all the specified branches into the currently checked out branch, creating a new commit for that branch. 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+pros: that it make life easier by simply merging all new parts n produce conflicts when their is one which doesnt make much sense. Manually done could make this task much tidius as we will have to manually compare eadch and every line.
+git diff amster branchname produce difference between codes.
+if difference is very simple enough like change of const we did, git will use the modified one(removed, updated values), if the codes differ on all master ancestor at brancging point n newbranch , then it will produce conflict. Stay in branch which u need to merge. if conflict arises, solve is manually,then git add that file then git commit to finish merging. Can use git status n git log -n 1 to FOR MORE INFO.

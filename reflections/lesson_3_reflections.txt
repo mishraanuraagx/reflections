@@ -27,3 +27,7 @@ fast foward merge of a & b means either of them should be able to access other a
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 harder thing would be an not so easier comparison platform for other collaborator, making comm difficult.
 without git or github, we would be required constant comm between collaborators for every commit, could okay for couple of collborator but not for a team.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+creating branches is better to add new thing to already working master, with every other collaborates giving a green light, without effecting the master until the branch is ready to merge. Easier conflict resolution. Though doing every change directly into master, means u wot have to look at different branches. But if any problem occur, finding the working version of the master could be tidious.
+

@@ -9,3 +9,8 @@ Why might you want to always pull changes manually rather than having Git automa
 doing it manually means we keeps repo's update to with relevant update and which may have effect on remaining repos for other contributors. Also it adds exra overhead for automatic update and we would need costant internet conection for that.
 
 remember to cd into to the dir else u wont see the desired result for 'git remote -v' output
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+forks hellps u point to authors repo so others would know whos repo u using.
+clones make a local copy of repo, could be forked, ur own github repo or any local one.
+branch allows u to make commit or create another repo on same local dir/machine(git or github) so as to add experimental or new features not neccessary for the work/project.

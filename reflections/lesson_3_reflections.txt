@@ -14,3 +14,8 @@ Describe the differences between forks, clones, and branches. When would you use
 forks hellps u point to authors repo so others would know whos repo u using.
 clones make a local copy of repo, could be forked, ur own github repo or any local one.
 branch allows u to make commit or create another repo on same local dir/machine(git or github) so as to add experimental or new features not neccessary for the work/project.
+
+more
+git fetch origin update local copy of the remote. if local copy isnt in syn n ahead of remote, then new origin branch will be updated.
+if both copy r out of syn, new update on both local n remote, then git pull origin/master master will do 2 actions, git fetch origin/master then git merge origin/master master
+origin/master means origin pointing to remote repo n its master branch of that repo if there r more than one.

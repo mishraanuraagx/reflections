@@ -19,3 +19,8 @@ more
 git fetch origin update local copy of the remote. if local copy isnt in syn n ahead of remote, then new origin branch will be updated.
 if both copy r out of syn, new update on both local n remote, then git pull origin/master master will do 2 actions, git fetch origin/master then git merge origin/master master
 origin/master means origin pointing to remote repo n its master branch of that repo if there r more than one.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+u always upto-date with whats going on with ur repo between ur collaborators.
+fast foward merge of a & b means either of them should be able to access other as its ancestors. It simply means that git has merged the local copy with remote one , if either of one them updates since last sync then fast forward is possible.
+

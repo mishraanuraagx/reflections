@@ -4,3 +4,6 @@ git remote = to see all known remote git repo on github
 git remove -v
 git remote add origin linkhttp = provide git a remote repo with link, with local name to that repo origin for easier access
 git push origin master = where to push n which branchname
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+doing it manually means we keeps repo's update to with relevant update and which may have effect on remaining repos for other contributors. Also it adds exra overhead for automatic update and we would need costant internet conection for that.

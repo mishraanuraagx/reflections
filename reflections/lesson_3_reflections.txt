@@ -24,3 +24,6 @@ What is the benefit of having a copy of the last known state of the remote store
 u always upto-date with whats going on with ur repo between ur collaborators.
 fast foward merge of a & b means either of them should be able to access other as its ancestors. It simply means that git has merged the local copy with remote one , if either of one them updates since last sync then fast forward is possible.
 
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+harder thing would be an not so easier comparison platform for other collaborator, making comm difficult.
+without git or github, we would be required constant comm between collaborators for every commit, could okay for couple of collborator but not for a team.
